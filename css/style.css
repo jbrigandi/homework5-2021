@@ -81,13 +81,11 @@ nav a:hover{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  /*ask
   /* Requirement 3a code here*/
   position: absolute;
   top: -40px;
   
 }
-/* ask
 /* Requirement 3b code here*/
 .skip a:focus{
   position: absolute;
@@ -126,20 +124,16 @@ header{
 
   /* YOUR CODE HERE; */
   
-  column-span: all;
+  
   grid-column: 1/-1;
   grid-row: 1 / span 1;
-  
-  
-  
-  
-  
+
 }
 
 
 
 .about-image{
-  column-span: all;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 2 / span 1;
@@ -153,7 +147,7 @@ header{
 }
 
 .method-image{
-  column-span: all;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 3 / span 1;
@@ -168,7 +162,7 @@ header{
 
 /* You need to write some of your own selectors here */
 .clients-image{
-  column-span: all;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 4 /span 1;
@@ -179,7 +173,7 @@ header{
   grid-row: 4 / span 1 ;
 }
 .contact-image{
-  column-span: all;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 5 / span 1;
@@ -197,14 +191,14 @@ header{
   padding: 30px;
 
   /* Your code here */
-  text-align: center;
+  align-self: center;
 
 }
 
 @media screen and (min-width: 800px){
   nav{
     padding: 30px 0;
-    /* ask */
+    
     text-align: right;
     /* Your code here */
   }
